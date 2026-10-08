@@ -22,6 +22,7 @@ A identificação numérica dos pedidos é local ao navegador; não representa u
 
 - `index.html`: interface, estilos e lógica do portal.
 - `REGRAS_DO_REPOSITORIO.md`: regras e condições do projeto.
+- `docs/HISTORICO_DE_EVOLUCAO.md`: linha do tempo, decisões e registros de publicação.
 - `.nojekyll`: publicação dos arquivos estáticos sem processamento pelo Jekyll.
 
 ## Dados e configuração
@@ -35,6 +36,10 @@ Código e configurações publicados em uma página estática são acessíveis a
 ## Executar
 
 Abra `index.html` em um navegador ou acesse a versão publicada pelo GitHub Pages. A transferência para o WhatsApp exige conexão com a internet.
+
+## Histórico de evolução
+
+Consulte a [evolução do projeto](docs/HISTORICO_DE_EVOLUCAO.md), com datas, decisões, limitações e referências aos commits e à primeira publicação.
 
 ## Regras do repositório
 
