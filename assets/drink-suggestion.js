@@ -28,7 +28,7 @@
  const close=()=>{panel.hidden=true;dismissed=true};
  document.getElementById('drinkDismiss').addEventListener('click',close);
  window.suggestDrink=function(name){
-  if(shown||dismissed||!window.products?.length)return;
+  if(shown||dismissed||!products?.length)return;
   const source=products.find(p=>p[0]===name);
   if(!source||!['Pastéis','Lanches'].includes(source[2]))return;
   if(cart.some(p=>products.some(x=>x[2]==='Bebidas'&&x[0]===p.name)))return;
