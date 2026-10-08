@@ -83,3 +83,13 @@ Essas possibilidades foram discutidas como evolução futura e não representam 
 ## Como atualizar este histórico
 
 Em futuras alterações, acrescentar uma etapa com data, objetivo, resultado, decisões, validações, limitações e links dos commits relevantes. Preservar os registros anteriores e distinguir planos de funcionalidades efetivamente publicadas. Não incluir dados pessoais ou sigilosos.
+
+## Evolução após a primeira publicação — 08/10/2026, solicitação às 11:59
+
+- Identidade da loja movida para `config/estabelecimento.json`, com nome, descrição, logo, cor principal e WhatsApp. Nome provisório enquanto o responsável não informa a identidade definitiva.
+- Logo prevista ao lado do nome no cabeçalho. Comanda usa o nome carregado da configuração.
+- Retirada apresenta total final igual ao subtotal, sem a expressão “sem taxa de entrega”. Entrega mantém confirmação da taxa e do total pela loja.
+- Sequência local preservada na chave anterior. UUID interno e snapshot versão 1 adicionados; recarregar a mesma aba recupera o pedido. Novo pedido cria outra identidade sem apagar o registro anterior.
+- Dados pessoais passam a ser persistidos localmente para recuperação; README e interface atualizados para refletir essa mudança. Não existe backup ou persistência central.
+- Contrato de migração e estados futuros registrados em [Configuração e integração](CONFIGURACAO_E_INTEGRACAO.md). Recebido, preparando e pronto (retirada/saindo para entrega) são planejamento, não um painel implementado.
+- Verificados em código: identidade externa, total de retirada, estabilidade do código na alocação e persistência do snapshot. Limitações anteriores sobre ausência de snapshots descrevem a primeira versão e são substituídas nesta etapa; a numeração continua local e não exclusiva entre dispositivos.
