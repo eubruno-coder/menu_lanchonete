@@ -12,6 +12,20 @@ Interface web para consultar um cardápio, personalizar produtos e preparar um p
 - Resumo de checkout e geração de comanda para envio pelo WhatsApp.
 - Interface adaptada para computadores e celulares.
 
+## Experiência mobile-first — V0.3
+
+A interface atual usa uma direção visual acolhedora inspirada no protótipo demonstrativo “Sabor da Vila” — **sem fixar esse nome como marca do estabelecimento**. A identidade pública continua carregada de `config/estabelecimento.json`.
+
+- Cabeçalho verde-escuro, fundo creme, área de boas-vindas e cards arredondados.
+- Categorias em navegação horizontal, com cards de produtos adaptados ao celular.
+- Sacola no cabeçalho com contador de itens e acesso ao carrinho.
+- Barra inferior de acesso rápido ao carrinho, com contraste claro sobre fundo escuro.
+- Indicador visual **Aberto** no cabeçalho; o estado é **provisório e fixo no código**. A alternância automática ou manual pelo lojista ainda não está implementada.
+- Sugestão opcional de até três bebidas ao adicionar pastel ou lanche, com inclusão somente após escolha explícita. A sugestão aparece uma vez durante a sessão da página e pode ser dispensada.
+- Respeito à lógica atual de personalização, carrinho, entrega/retirada, pagamento e comanda por WhatsApp.
+
+A V0.3 é uma evolução da interface, **não** um sistema SaaS operacional.
+
 ## Estado atual
 
 O projeto está em desenvolvimento e recebe ajustes progressivos de interface e funcionamento. Esta versão não possui painel de gestão, acompanhamento de pedidos ou processamento de pagamentos. A confirmação do pedido ocorre com a loja pelo WhatsApp.
@@ -20,7 +34,10 @@ A identificação numérica dos pedidos é local ao navegador; não representa u
 
 ## Estrutura
 
-- `index.html`: interface, estilos e lógica do portal.
+- `index.html`: interface, estilos e lógica do portal, incluindo ajustes visuais da V0.3.
+- `assets/mobile-first.css`: estilos responsivos complementares.
+- `assets/mobile-cart.js`: barra móvel do carrinho, contador da sacola no cabeçalho e indicador provisório de funcionamento.
+- `assets/drink-suggestion.js`: recomendação contextual e opcional de bebidas.
 - `REGRAS_DO_REPOSITORIO.md`: regras e condições do projeto.
 - `docs/HISTORICO_DE_EVOLUCAO.md`: linha do tempo, decisões e registros de publicação.
 - `config/estabelecimento.json`: identidade pública da loja, logo, cor e WhatsApp.
@@ -42,6 +59,18 @@ Acesse o [portal publicado](https://eubruno-coder.github.io/menu_lanchonete/) ou
 ## Configuração e integração
 
 Consulte [Configuração e integração futura](docs/CONFIGURACAO_E_INTEGRACAO.md) para alterar a identidade da loja e entender a recuperação local, o formato dos registros e o fluxo operacional planejado.
+
+## Próximas etapas — evolução para SaaS
+
+Planejado, **ainda não implementado**:
+
+1. Separar catálogo, imagens e demais dados da loja da lógica HTML, com configuração extensível.
+2. Criar painel do lojista para gerenciar produtos, preços, identidade visual e horários de funcionamento.
+3. Implementar autenticação, persistência em banco e isolamento de dados entre estabelecimentos.
+4. Criar gestão centralizada de pedidos e estados operacionais (recebido, preparando, pronto para retirada e saindo para entrega).
+5. Validar o fluxo completo em ambiente de homologação antes de cada publicação.
+
+A especificação visual da V0.3 está em [docs/roadmap-visual-v03.md](https://github.com/eubruno-coder/menu_lanchonete/blob/feature/mobile-first-v02/docs/roadmap-visual-v03.md), na branch experimental.
 
 ## Histórico de evolução
 
