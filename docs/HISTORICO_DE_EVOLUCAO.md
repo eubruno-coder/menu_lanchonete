@@ -97,3 +97,22 @@ Em futuras alterações, acrescentar uma etapa com data, objetivo, resultado, de
 ### Verificação da atualização publicada
 
 A publicação da etapa foi concluída com sucesso. Em teste com dados fictícios no navegador, foram conferidos o nome carregado do JSON, o pedido de pastel, pagamento PIX e retirada com total final igual ao subtotal. Após recarregar a mesma aba, carrinho, dados, pagamento, retirada e `PEDIDO-#1` foram recuperados sem nova numeração. Nenhuma mensagem foi enviada à loja. A numeração observada pertence ao navegador de teste, não a uma sequência global.
+
+
+## Registro visual — 08/10/2026
+
+Capturas originais preservadas para consulta da evolução do portal. Elas retratam as versões nas etapas indicadas e não necessariamente a aparência atual. O checkout utiliza exclusivamente dados fictícios de teste; não houve envio de pedido real.
+
+### Primeira publicação do portal
+
+Cardápio publicado com identidade genérica, categorias de produtos, montagem de pastel e carrinho lateral.
+
+![Portal na primeira publicação em 08/10/2026](imagens/2026-10-08-portal-publicado.jpg)
+
+### Checkout de retirada após a atualização
+
+Identidade provisória carregada da configuração externa e revisão de um pedido de teste com pagamento PIX. Na retirada, subtotal e total final são iguais, sem a expressão “sem taxa de entrega”. O código exibido pertence ao navegador de teste.
+
+![Checkout de retirada atualizado em 08/10/2026, com dados fictícios](imagens/2026-10-08-checkout-retirada.jpg)
+
+As imagens estão versionadas em `docs/imagens/` junto ao histórico, sem depender dos arquivos temporários da conversa.
