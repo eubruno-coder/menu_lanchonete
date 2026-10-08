@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "menu-lanchonete",
+  "name": "Seu estabelecimento",
+  "description": "Pastéis, lanches e açaí",
+  "whatsapp": "",
+  "logo": {
+    "url": "",
+    "alt": ""
+  },
+  "theme": {
+    "primary": "#aa3042"
+  }
+}
