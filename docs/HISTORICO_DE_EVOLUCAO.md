@@ -93,3 +93,7 @@ Em futuras alterações, acrescentar uma etapa com data, objetivo, resultado, de
 - Dados pessoais passam a ser persistidos localmente para recuperação; README e interface atualizados para refletir essa mudança. Não existe backup ou persistência central.
 - Contrato de migração e estados futuros registrados em [Configuração e integração](CONFIGURACAO_E_INTEGRACAO.md). Recebido, preparando e pronto (retirada/saindo para entrega) são planejamento, não um painel implementado.
 - Verificados em código: identidade externa, total de retirada, estabilidade do código na alocação e persistência do snapshot. Limitações anteriores sobre ausência de snapshots descrevem a primeira versão e são substituídas nesta etapa; a numeração continua local e não exclusiva entre dispositivos.
+
+### Verificação da atualização publicada
+
+A publicação da etapa foi concluída com sucesso. Em teste com dados fictícios no navegador, foram conferidos o nome carregado do JSON, o pedido de pastel, pagamento PIX e retirada com total final igual ao subtotal. Após recarregar a mesma aba, carrinho, dados, pagamento, retirada e `PEDIDO-#1` foram recuperados sem nova numeração. Nenhuma mensagem foi enviada à loja. A numeração observada pertence ao navegador de teste, não a uma sequência global.
