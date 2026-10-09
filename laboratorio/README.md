@@ -3,9 +3,9 @@ Esta pasta é uma **prova de conceito isolada**, disponível somente na branch `
 ## Como testar
 1. Publique esta branch em um ambiente de homologação HTTPS (GitHub Pages da `main` **não** publica automaticamente esta branch). Alternativamente, execute um servidor HTTP local e abra em dois dispositivos com acesso ao endereço.
 2. No laboratório, crie uma conta de teste com e-mail e senha. Confirme o e-mail se solicitado.
-3. Faça login com **a mesma conta de teste** no celular e no computador.
-4. No computador, abra **Painel**. No celular, abra **Enviar pedido** e envie um pedido fictício.
-5. A tabela `orders` emite evento Realtime e o painel consulta novamente os dados. Há também atualização a cada 10 segundos.
+3. Na primeira abertura, informe a **chave publishable** do projeto Supabase (Dashboard → Settings → API Keys). Ela fica salva somente no navegador do dispositivo. Nunca use a chave secret/service_role.\n4. Faça login com **a mesma conta de teste** no celular e no computador.
+5. No computador, abra **Painel**. No celular, abra **Enviar pedido** e envie um pedido fictício.
+6. A tabela `orders` emite evento Realtime e o painel consulta novamente os dados. Há também atualização a cada 10 segundos.
 ## Segurança e limitações
 - Projeto Supabase separado; chave **publishable** no navegador (nunca usar `service_role` no frontend).
 - Edge Function `delivery-demo` exige JWT de usuário e restringe origens ao GitHub Pages do projeto e localhost. Origem não é autenticação: cada operação é validada pelo JWT e pela associação do usuário à loja.
