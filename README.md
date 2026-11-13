@@ -2,6 +2,13 @@
 
 Interface web para consultar um cardápio, personalizar produtos e preparar um pedido para envio pelo WhatsApp.
 
+[![Status](https://img.shields.io/badge/status-em%20desenvolvimento-orange)](#estado-atual)
+[![Versão](https://img.shields.io/badge/versão-V0.3-blue)](#experiência-mobile--first--v03)
+[![Plataforma](https://img.shields.io/badge/plataforma-web%20%7C%20mobile--first-2ea44f)](#funcionalidades)
+[![Integração](https://img.shields.io/badge/integração-WhatsApp-25D366?logo=whatsapp&logoColor=white)](#executar)
+
+---
+
 ## Funcionalidades
 
 - Cardápio por categorias e carrinho com controle de quantidades.
